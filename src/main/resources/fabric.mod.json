@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "isekaimod",
+  "version": "${version}",
+  "name": "isekaimod",
+  "description": "",
+  "authors": [
+    "John Isekai"
+  ],
+  "contact": {
+    "repo": "https://github.com/awian/untitled1"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/isekaimod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "adventurers.guild.isekaimod.client.IsekaimodClient"
+    ],
+    "main": [
+      "adventurers.guild.isekaimod.Isekaimod"
+    ]
+  },
+  "mixins": [
+    "isekaimod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
